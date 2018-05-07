@@ -7,7 +7,7 @@ def main():                                                #if there is more tha
         print("this converter takes one parameters, "
               "an input file")
     else:
-        print("input file: " + sys.argv[1])                #otherwise make sure than evetything runs ok
+        print("input file: " + sys.argv[1])                #if false make sure than evetything runs ok
         readCSVFile(sys.argv[1])
 
 

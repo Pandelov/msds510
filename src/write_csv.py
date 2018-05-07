@@ -3,11 +3,11 @@ import csv
 import re                                              #import regular expressions modul
 
 def main():
-    if (len(sys.argv) != 3):
-        print("this converter takes two parameters, "
+    if (len(sys.argv) != 3):                                #If the number of arguments does not equal 2 (true)
+        print("this converter takes two parameters, "       #then we need to say that the converter takes two parameters
               "an input file and an output file")
     else:
-        print("input file: " + sys.argv[1])
+        print("input file: " + sys.argv[1])                 #if false read the csv dictionary file
         print("output file: " + sys.argv[2])
         readCSVDictFile(sys.argv[1], sys.argv[2])
 

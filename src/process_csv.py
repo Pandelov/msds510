@@ -21,5 +21,5 @@ def processFile(infile, outfile):
     util.writeCSVFile(outfile, file, fieldnames)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':                            #calling the function
     main()
