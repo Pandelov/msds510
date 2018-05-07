@@ -1,0 +1,26 @@
+import sys
+from src.msds510.util import util
+
+def main():
+
+    if len(sys.argv) != 3:
+        print("this report generator takes two parameters, "
+              "an input file and an output file")
+    else:
+        print("input file: " + sys.argv[1])
+        print("output file: " + sys.argv[2])
+        generateReport(sys.argv[1], sys.argv[2])
+
+
+def generateReport(infile, outfile):
+
+    file = util.readProcessedCSVFile(infile)
+    sortedRecords = sorted(file,
+                           key=lambda k: int(k['appearances']),
+                           reverse=True)[:10]                               #grabbing up till number 10
+
+    util.printMarkdown(sortedRecords, outfile)
+
+
+if __name__ == '__main__':
+    main()
