@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="506336c8-35b2-4135-934c-6bb288b29b36" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/scratch.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/convert_to_utf8.py" afterPath="$PROJECT_DIR$/src/convert_to_utf8.py" />
-      <change beforePath="$PROJECT_DIR$/src/make_report.py" afterPath="$PROJECT_DIR$/src/make_report.py" />
-      <change beforePath="$PROJECT_DIR$/src/process_csv.py" afterPath="$PROJECT_DIR$/src/process_csv.py" />
-      <change beforePath="$PROJECT_DIR$/src/read_csv.py" afterPath="$PROJECT_DIR$/src/read_csv.py" />
-      <change beforePath="$PROJECT_DIR$/src/read_csv_dict.py" afterPath="$PROJECT_DIR$/src/read_csv_dict.py" />
-      <change beforePath="$PROJECT_DIR$/src/write_csv.py" afterPath="$PROJECT_DIR$/src/write_csv.py" />
-    </list>
+    <list default="true" id="506336c8-35b2-4135-934c-6bb288b29b36" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
