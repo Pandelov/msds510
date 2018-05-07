@@ -4,7 +4,7 @@ from src.msds510.util import util
 def main():
 
     if len(sys.argv) != 3:                                      #If the number of arguments does not equal 2 (true)
-        print("this report generator takes two parameters, "    #then we need to say that the converter takes two parameters
+        print("this report generator takes two parameters, "    #then we need to say that the report generator takes two parameters
               "an input file and an output file")
     else:
         print("input file: " + sys.argv[1])                     #if false generate report
