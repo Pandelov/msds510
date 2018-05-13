@@ -8,15 +8,15 @@ def main():
         no return. Executed convertFile with collected
         file names.
     """
-    if len(sys.argv) != 3:                                  #If the number of arguments does not equal 2 (true)
-        print("this converter takes two parameters, "       #then we need to say that the converter takes two parameters
+    if len(sys.argv) != 3:
+        print("this converter takes two parameters, "       
               "an input file and an output file")
     else:
-        print("input file: " + sys.argv[1])                 #if false convert the file
+        print("input file: " + sys.argv[1])
         print("output file: " + sys.argv[2])
         convertFile(sys.argv[1], sys.argv[2])
 
-def convertFile(infile, outfile):       #defining a function called convertFile. It has two parameters.
+def convertFile(infile, outfile):
     """reads an infile which is decoded and then
         encoded into UTF8.
     Args:
@@ -25,13 +25,13 @@ def convertFile(infile, outfile):       #defining a function called convertFile.
     Returns:
         doesn't return but writes the UTF encoded
         data to an outfile.
-    """                                    #infile is the file we are creating and outfile is the file that will be created
-    f = open(infile, "rb")                                     #we are opening the file
-    data = f.read()                                            #reading the file
-    decodedData = data.decode('ISO-8859-1')                    #decoding
+    """
+    f = open(infile, "rb")
+    data = f.read()
+    decodedData = data.decode('ISO-8859-1')
     encodedData = decodedData.encode('utf-8')
     open(outfile, "wb").write(encodedData)
-    f.close()                                                  #closing the file
+    f.close()                                                  
     print("Success: File conversion complete.")
 
 
