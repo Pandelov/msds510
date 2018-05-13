@@ -1,22 +1,34 @@
 import sys
 
+
 def main():
-    if len(sys.argv) != 3:                                  #If the number of arguments does not equal 2 (true)
-        print("this converter takes two parameters, "       #then we need to say that the converter takes two parameters
+    # If the number of arguments does not equal 2 (true)
+    # then we need to say that the converter takes two parameters
+    if len(sys.argv) != 3:
+        print("this converter takes two parameters,"
               "an input file and an output file")
+    # if false convert the file
     else:
-        print("input file: " + sys.argv[1])                 #if false convert the file
+        print("input file: " + sys.argv[1])
         print("output file: " + sys.argv[2])
         convertFile(sys.argv[1], sys.argv[2])
 
-def convertFile(infile, outfile):       #defining a function called convertFile. It has two parameters.
-                                        #infile is the file we are creating and outfile is the file that will be created
-    f = open(infile, "rb")                                     #we are opening the file
-    data = f.read()                                            #reading the file
-    decodedData = data.decode('ISO-8859-1')                    #decoding
+
+# defining a function called convertFile. It has two parameters
+# infile is the file we are creating
+# outfile is the file that will be created
+
+def convertFile(infile, outfile):
+    # we are opening the file
+    f = open(infile, "rb")
+    # reading the file
+    data = f.read()
+    # decoding
+    decodedData = data.decode('ISO-8859-1')
     encodedData = decodedData.encode('utf-8')
     open(outfile, "wb").write(encodedData)
-    f.close()                                                  #closing the file
+    # closing the file
+    f.close()
     print("Success: File conversion complete.")
 
 

@@ -1,27 +1,37 @@
 import sys
 import csv
-import re                                              #import regular expressions modul
+# import regular expressions modul
+import re
 
+
+# If the number of arguments does not equal 2 (true)
+# then we need to say that the converter takes two parameters
 def main():
-    if (len(sys.argv) != 3):                                #If the number of arguments does not equal 2 (true)
-        print("this converter takes two parameters, "       #then we need to say that the converter takes two parameters
+    if (len(sys.argv) != 3):
+        print("this converter takes two parameters, "
               "an input file and an output file")
+    # if false read the csv dictionary file
     else:
-        print("input file: " + sys.argv[1])                 #if false read the csv dictionary file
+        print("input file: " + sys.argv[1])
         print("output file: " + sys.argv[2])
         readCSVDictFile(sys.argv[1], sys.argv[2])
 
-def readCSVDictFile(infile, outfile):                   #reading the dictionary file.
 
-    fieldnames = []                                     #accumulator - accumulates text
+# reading the dictionary file
+def readCSVDictFile(infile, outfile):
+    # accumulator - accumulates text
+    fieldnames = []
     with open(infile, 'rU') as csvfile1:
         fieldreader = csv.reader(csvfile1, delimiter=',')
-        fielddata = list(fieldreader)[0]                #creating a list
+        # creating a list
+        fielddata = list(fieldreader)[0]
         fieldnames = [make_nice_name(field) for field in fielddata]
-
-    with open(infile, 'rU') as csvfile2:  # open file
-        reader = csv.DictReader(csvfile2, delimiter=',') #reading the data
-        data = list(reader)                              # putting the data into the list
+    # open file
+    with open(infile, 'rU') as csvfile2:
+        # reading the data
+        reader = csv.DictReader(csvfile2, delimiter=',')
+        # putting the data into the list
+        data = list(reader)
 
         with open(outfile, 'w') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -30,14 +40,15 @@ def readCSVDictFile(infile, outfile):                   #reading the dictionary 
             for d in data:
                 newRow = {}
                 for key, val in d.items():
-                    newRow[make_nice_name(key)] = d[key]       #overwriting the keys in the dictionary
+                    # overwriting the keys in the dictionary
+                    newRow[make_nice_name(key)] = d[key]
 
                 writer.writerow(newRow)
 
 
 def make_nice_name(name):
-
-    newString = name.replace(" ", "_")                  #strip and replace space and underscore symbols
+    # strip and replace space and underscore symbols
+    newString = name.replace(" ", "_")
     newString = newString.replace("/", "_")
     newString = newString.strip("?").strip().lower()
     newString = re.sub(r'[^0-9a-z_\_]', '', newString)
@@ -46,4 +57,3 @@ def make_nice_name(name):
 
 if __name__ == '__main__':
     main()
-
