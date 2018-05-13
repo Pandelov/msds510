@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="506336c8-35b2-4135-934c-6bb288b29b36" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test_util_module.py" afterPath="$PROJECT_DIR$/src/test_util_module.py" />
-    </list>
+    <list default="true" id="506336c8-35b2-4135-934c-6bb288b29b36" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_util_module.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_util_module.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test_util_module.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convert_to_utf8.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/convert_to_utf8.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="103" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -395,6 +403,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="103" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="103" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -568,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/convert_to_utf8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="103" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/process_csv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -663,6 +665,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/convert_to_utf8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="103" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="103" />
           <folding />
         </state>
       </provider>
