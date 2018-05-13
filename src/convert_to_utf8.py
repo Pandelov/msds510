@@ -31,7 +31,7 @@ def convertFile(infile, outfile):
     decodedData = data.decode('ISO-8859-1')
     encodedData = decodedData.encode('utf-8')
     open(outfile, "wb").write(encodedData)
-    f.close()                                                  
+    f.close()
     print("Success: File conversion complete.")
 
 
