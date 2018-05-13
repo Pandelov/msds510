@@ -1,4 +1,4 @@
-rom msds510.utils import utils
+from msds510.utils import utils
 
 records = [
     dict(year='1988', intro='Jun-88'),
