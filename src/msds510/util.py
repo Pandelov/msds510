@@ -23,22 +23,26 @@ def days_since_joined(yearString, dateString):
     return rval
 
 
-def to_int(value):                                          #to initiative
+# to initiative
+def to_int(value):
     return int(value)
 
 
-def to_bool(value):                                         #to booleyan
+# to boolean
+def to_bool(value):
     if not value.strip():
         return None
     else:
         return True if value == 'YES' else False
 
 
-def clean_notes(value):                                     #cleaning up the notes
+# cleaning up the notes
+def clean_notes(value):
     return value.strip()
 
 
-def make_nice_name(name):                                   #making nice names
+# making nice names
+def make_nice_name(name):
     newString = name.replace(" ", "_")
     newString = newString.replace("/", "_")
     newString = newString.strip("?").strip().lower()
@@ -46,14 +50,16 @@ def make_nice_name(name):                                   #making nice names
     return newString
 
 
-def readProcessedCSVFile(infile):                           #reading the processed csv file
+# reading the processed csv file
+def readProcessedCSVFile(infile):
 
     with open(infile, 'r') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',')
         return list(reader)
 
 
-def printMarkdown(records, outfile):                                      #sending the below to markdown
+# sending the below to markdown
+def printMarkdown(records, outfile):
     with open(outfile, 'w') as ofile:
         for idx, rc in enumerate(records):
             ofile.write("# " + str(idx + 1) + ". " + rc["name_alias"] + "\n\n")
@@ -76,6 +82,7 @@ def readCSVFile(infile):
 
 def readFieldNames(infile):
 
+    # open file
     fieldnames = []
     with open(infile, 'rU') as csvfile1:
         fieldreader = csv.reader(csvfile1, delimiter=',')

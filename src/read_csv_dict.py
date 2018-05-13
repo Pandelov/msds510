@@ -1,20 +1,25 @@
 import sys
-import csv                                                 #import the csv module
+# import the csv module
+import csv
 
 
-def main():                                                #if there is more than one argument, then we need to say that
-    if (len(sys.argv) != 2):                               #the converter takes one parameter as an input file
+def main():
+    # if there is more than one argument, then we need to say that
+    # the converter takes one parameter as an input file
+    if (len(sys.argv) != 2):
         print("this converter takes one parameters, "
               "an input file")
+    # if false make sure than evetything runs ok
     else:
-        print("input file: " + sys.argv[1])                #if false make sure than evetything runs ok
+        print("input file: " + sys.argv[1])
         readCSVFile(sys.argv[1])
 
 
 def readCSVFile(infile):
 
     with open(infile, 'rU') as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=',')    #using the dictionary reader
+        # using the dictionary reader
+        reader = csv.DictReader(csvfile, delimiter=',')
         data = list(reader)
         print(data[160])
 
