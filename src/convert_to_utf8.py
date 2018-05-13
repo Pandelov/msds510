@@ -2,7 +2,7 @@ import sys
 
 
 def main():
-     """interprets command line request
+    """interprets command line request
     Args:
         argv: an array with input and output files
     Returns:
