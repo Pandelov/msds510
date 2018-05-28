@@ -23,9 +23,23 @@ def days_since_joined(yearString, dateString):
     return rval
 
 
-# to initiative
+# function that converts an input value into an integer
 def to_int(value):
-    return int(value)
+    try:
+        return int(value)
+    except:
+        return None
+
+# function that takes as args a series of items and a value
+# If list or tuple returns integer index, if dict returns the input key
+# If no value returns None
+def get_value(items, value):
+    try:
+        return items.index(value)
+    except:
+        return items[value]
+    else:
+        return None
 
 
 # to boolean
