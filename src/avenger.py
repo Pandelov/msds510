@@ -40,6 +40,39 @@ class Avenger:
     def notes(self):
         return self.record.get('notes')
 
+    def death_1(self):
+        return self.record.get('death1')
+
+    def death_2(self):
+        return self.record.get('death2')
+
+    def death_3(self):
+        return self.record.get('death3')
+
+    def death_4(self):
+        return self.record.get('death4')
+
+    def death_5(self):
+        return self.record.get('death5')
+
+    def honorary_member(self):
+        return self.record.get('honorary')
+
+    def return_1(self):
+        return self.record.get('return1')
+
+    def return_2(self):
+        return self.record.get('return2')
+
+    def return_3(self):
+        return self.record.get('return3')
+
+    def return_4(self):
+        return self.record.get('return4')
+
+    def return_5(self):
+        return self.record.get('return5')
+
     def _str_(self):
         return self.record.get('_str_')
 
