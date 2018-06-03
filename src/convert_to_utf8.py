@@ -21,6 +21,7 @@ def main():
         print("output file: " + sys.argv[2])
         convertFile(sys.argv[1], sys.argv[2])
 
+
 def convertFile(infile, outfile):
     """reads an infile which is decoded and then
         encoded into UTF8.

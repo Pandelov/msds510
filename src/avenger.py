@@ -1,3 +1,6 @@
+import datetime
+
+
 class Avenger:
     def _init_(self, record):
         """
@@ -8,7 +11,7 @@ class Avenger:
         """
         self.record = record
 
-    def url (self):
+    def url(self):
         """
         Returns:
             str:URL
@@ -16,7 +19,7 @@ class Avenger:
         return self.record.get('url')
 
     def name_alias(self):
-         """
+        """
         Returns:
             str:Name or alias of the character
         """
@@ -36,13 +39,13 @@ class Avenger:
             bool: Is it still active? (True/False)
         """
 
-        if self.record.get('is_current')==YES
+        if self.record.get('is_current') == YES
             return true
         else
             return false
 
     def gender(self):
-         """
+        """
         Returns:
             str: The gender of the character
         """
@@ -116,9 +119,3 @@ class Avenger:
 
     def _repr_(self):
         return self.record.get('_repr_')
-
-
-
-
-
-

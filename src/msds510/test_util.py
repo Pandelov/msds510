@@ -1,6 +1,7 @@
 import unittest
 from msds510 import util
 
+
 class UtilTest(unittest.TestCase):
 
     def setUp(self):
@@ -26,6 +27,7 @@ class UtilTest(unittest.TestCase):
 
     def test_list_missing_key(self):
         self.assertEqual(util.get_value(self.list_y, 'b'), None)
+
 
 if __name__ == '__main__':
     main()

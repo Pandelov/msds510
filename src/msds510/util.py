@@ -30,6 +30,7 @@ def to_int(value):
     except:
         return None
 
+
 # function that takes as args a series of items and a value
 # If list or tuple returns integer index, if dict returns the input key
 # If no value returns None
